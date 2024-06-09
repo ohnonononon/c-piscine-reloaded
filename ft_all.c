@@ -6,7 +6,7 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 14:16:39 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/09 18:53:32 by ohnudes          ###   ########.fr       */
+/*   Updated: 2024/06/09 19:26:53 by ohnudes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,6 +123,52 @@ int	ft_strcmp(char *s1, char *s2)
 		s2++;
 	}
 	return (*s1 - *s2);
+}
+
+// FT_STRDUP
+
+#include <stdlib.h>
+
+
+
+char	*ft_strdup(char *str)
+{
+	char	*nstr;
+	int	len;
+
+	if (!str)
+	{
+		nstr = malloc(sizeof(char) * 1);
+		if (nstr)
+			*nstr = '\0';
+		return (nstr);
+	}
+	len = ft_strlen(str);
+	nstr = malloc(sizeof(char) * len + 1);
+	nstr[len] = '\0';
+	len--;
+	while (len > 0)
+	{
+		nstr[len] = str[len];
+		len--;
+	}
+	return (nstr);
+}
+
+int	*ft_range(int min, int max)
+{
+	int	*arr;
+	int	i;
+	int	range;
+	
+	i = 0;
+	range = max - min + 1;
+	arr = malloc(sizeof(int) * range);
+	if (!arr)
+		return (NULL);
+	while (i < range && min <= max)
+		arr[i++] = min++;
+	return (arr);
 }
 
 #include <stdio.h>
