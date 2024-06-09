@@ -6,7 +6,7 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 14:16:39 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/09 19:26:53 by ohnudes          ###   ########.fr       */
+/*   Updated: 2024/06/09 19:27:32 by ohnudes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -155,6 +155,7 @@ char	*ft_strdup(char *str)
 	return (nstr);
 }
 
+// BUG
 int	*ft_range(int min, int max)
 {
 	int	*arr;
