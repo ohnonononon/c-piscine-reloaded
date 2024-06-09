@@ -6,7 +6,7 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 14:16:39 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/09 19:28:25 by ohnudes          ###   ########.fr       */
+/*   Updated: 2024/06/09 19:31:15 by ohnudes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -155,7 +155,7 @@ char	*ft_strdup(char *str)
 	return (nstr);
 }
 
-// BUG
+//  BUG: to check if now max-min is accurate
 int	*ft_range(int min, int max)
 {
 	int	*arr;
