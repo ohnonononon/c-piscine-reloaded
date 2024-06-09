@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/06 22:59:43 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/09 14:11:07 by nimatura         ###   ########.fr       */
+/*   Created: 2024/06/09 14:15:20 by nimatura          #+#    #+#             */
+/*   Updated: 2024/06/09 14:15:25 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_putchar(int c);
+#include <unistd.h>
 
-void    ft_print_alphabet(void)
+int	ft_putchar(int c)
 {
-    char    c;
-
-    c = 'a';
-    while (c <= 'z')
-        ft_putchar(c++);
+	return (write(1, &c, 1));
 }
