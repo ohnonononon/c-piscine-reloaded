@@ -6,7 +6,7 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 14:16:39 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/09 15:25:00 by nimatura         ###   ########.fr       */
+/*   Updated: 2024/06/09 18:53:32 by ohnudes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,10 @@ int	ft_putchar(int c)
 	return (write(1, &c, 1));
 }
 
-int	ft_putstr(char *s)
+void	ft_putstr(char *s)
 {
-	while (*s != '\0' && ft_putchar(*s) == 1)
-		s++;
-	return (0);
+	while (*s != '\0')
+		ft_putchar(*(s++));
 }
 
 void	ft_is_negative(int n)
@@ -94,7 +93,37 @@ int	ft_recursive_factorial(int nb)
 	return (nb * ft_recursive_factorial(nb - 1));
 }
 
-int	ft_s
+int	ft_sqrt(int nb)
+{
+	int	n;
+
+	n = 1;
+	if (n < nb / n)
+		n++;
+	if (n * n != nb)
+		return (0);
+	return (n);
+}
+
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (*str++)
+		i++;
+	return (i);
+}
+
+int	ft_strcmp(char *s1, char *s2)
+{
+	while (*s1 != '\0' && *s1 == *s2)
+	{
+		s1++;
+		s2++;
+	}
+	return (*s1 - *s2);
+}
 
 #include <stdio.h>
 
