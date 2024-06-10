@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/09 14:12:11 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/10 17:17:30 by nimatura         ###   ########.fr       */
+/*   Created: 2024/06/10 17:18:19 by nimatura          #+#    #+#             */
+/*   Updated: 2024/06/10 17:18:21 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_putchar(int c);
 
-void	ft_print_numbers(void)
+void	ft_is_negative(int n)
 {
-	int	c;
-
-	c = '0';
-	while (c <= '9')
-		ft_putchar(c++);
+	if (n < 0)
+		ft_putchar('N');
+	else
+		ft_putchar('P');
 }
