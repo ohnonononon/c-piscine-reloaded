@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/06 22:59:43 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/10 17:19:07 by nimatura         ###   ########.fr       */
+/*   Created: 2024/06/10 17:20:14 by nimatura          #+#    #+#             */
+/*   Updated: 2024/06/10 17:20:27 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_putchar(int c);
-
-void    ft_print_alphabet(void)
+void	ft_swap(int *a, int *b)
 {
-    char    c;
+	int	tmp;
 
-    c = 'a';
-    while (c <= 'z')
-        ft_putchar(c++);
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
