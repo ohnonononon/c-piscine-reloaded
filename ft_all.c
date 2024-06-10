@@ -6,7 +6,7 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 14:16:39 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/09 19:31:15 by ohnudes          ###   ########.fr       */
+/*   Updated: 2024/06/10 10:35:18 by ohnudes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -171,6 +171,8 @@ int	*ft_range(int min, int max)
 		arr[i++] = min++;
 	return (arr);
 }
+
+// /ft_abs.h
 
 #include <stdio.h>
 
