@@ -6,18 +6,12 @@
 /*   By: nimatura <nimatura@student.42barce>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 18:57:42 by ohnudes           #+#    #+#             */
-/*   Updated: 2024/06/09 19:10:21 by ohnudes          ###   ########.fr       */
+/*   Updated: 2024/06/10 17:31:27 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_putchar(int c);
-// #include <unistd.h>
-//
-// int	ft_putchar(int c)
-// {
-// 	return (write(1, &c, 1));
-// }
-//
+
 int	aux_strcmp(char *s1, char *s2)
 {
 	while (*s1 != '\0' && *s1 == *s2)
