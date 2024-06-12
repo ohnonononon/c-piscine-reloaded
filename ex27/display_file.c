@@ -6,7 +6,7 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 19:42:29 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/12 09:56:26 by ohnudes          ###   ########.fr       */
+/*   Updated: 2024/06/12 10:23:16 by ohnudes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,9 @@ int	print_to_output(char *buffer, int read_bytes)
 }
 
 // null terminate the buffer. Otherwise we eat shit
+// 351bfbcb0101f56186b8f550dbc3f93613c9ba23: no need actually? to check at
+// campus
+
 int	read_and_print(int fd)
 {
 	char	buffer[1024];
