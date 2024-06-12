@@ -6,7 +6,7 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 18:08:08 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/12 19:42:55 by nimatura         ###   ########.fr       */
+/*   Updated: 2024/06/12 20:33:05 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	*ft_range(int min, int max)
 	int	i;
 	int	range;
 
-	if (min > max)
+	if (min >= max)
 		return (NULL);
 	i = 0;
 	range = max - min;
