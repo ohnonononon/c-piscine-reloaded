@@ -6,15 +6,11 @@
 /*   By: nimatura <nimatura@student.42barce>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 18:57:42 by ohnudes           #+#    #+#             */
-/*   Updated: 2024/06/12 20:30:41 by nimatura         ###   ########.fr       */
+/*   Updated: 2024/06/12 20:38:54 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 int	aux_strcmp(char *s1, char *s2)
 {
