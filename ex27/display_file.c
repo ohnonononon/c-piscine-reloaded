@@ -6,7 +6,7 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 19:42:29 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/12 20:37:13 by nimatura         ###   ########.fr       */
+/*   Updated: 2024/06/12 21:43:30 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int	read_and_print(int fd)
 	{
 		read_bytes = read(fd, buffer, 1024);
 		if (read_bytes == -1)
-			return (err_exit(fd, "Cannot read file."));
+			return (err_exit(fd, "Cannot read file.\n"));
 		buffer[read_bytes] = '\0';
 		print_to_output(buffer, read_bytes);
 	}
