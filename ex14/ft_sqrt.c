@@ -6,7 +6,7 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 17:24:05 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/12 21:41:33 by nimatura         ###   ########.fr       */
+/*   Updated: 2024/06/12 22:35:47 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_sqrt(int nb)
 	n = 1;
 	if (nb < 0)
 		return (0);
-	if (n * n < nb)
+	while (n * n < nb)
 		n++;
 	if (n * n == nb)
 		return (n);
