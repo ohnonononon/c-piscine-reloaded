@@ -6,11 +6,11 @@
 /*   By: ohnudes <nimatura@student.42barcel>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/12 10:34:31 by ohnudes           #+#    #+#             */
-/*   Updated: 2024/06/12 10:34:32 by ohnudes          ###   ########.fr       */
+/*   Updated: 2024/06/12 19:49:20 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
 # define FT_ABS_H
-# define ABS(x) (x > 0 ? x : -x)
+# define ABS(x) (x >= 0 ? x : -x)
 #endif
