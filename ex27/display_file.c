@@ -6,7 +6,7 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 19:42:29 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/11 20:19:17 by nimatura         ###   ########.fr       */
+/*   Updated: 2024/06/12 09:56:26 by ohnudes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,26 +31,23 @@ int	print_to_output(char *buffer, int read_bytes)
 
 	i = 0;
 	while (i < read_bytes)
-		if (ft_putchar_fd(1, buffer[i++]) == -1)
-			return (err_exit(2, "Can't print into output fd."));
+		ft_putchar_fd(1, buffer[i++]);
 	return (0);
 }
 
 // null terminate the buffer. Otherwise we eat shit
 int	read_and_print(int fd)
 {
-	char	buffer[1025];
+	char	buffer[1024];
 	size_t	read_bytes;
 
 	read_bytes = 1;
-	buffer[1024] = '\0';
 	while (read_bytes > 0)
 	{
 		read_bytes = read(fd, buffer, 1024);
 		if (read_bytes == -1)
 			return (err_exit(fd, "Cannot read file."));
-		if (print_to_output(buffer, read_bytes) == 0)
-			return (-1);
+		print_to_output(buffer, read_bytes);
 	}
 	return (0);
 }
