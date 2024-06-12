@@ -6,7 +6,7 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 17:32:34 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/10 18:04:53 by nimatura         ###   ########.fr       */
+/*   Updated: 2024/06/12 19:42:31 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ int	aux_strlen(char *str)
 char	*ft_strdup(char *str)
 {
 	char	*nstr;
-	int	i;
-	int	len;
+	int		i;
+	int		len;
 
 	if (!str)
 	{

@@ -6,7 +6,7 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 19:42:29 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/12 10:23:16 by ohnudes          ###   ########.fr       */
+/*   Updated: 2024/06/12 19:45:31 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	ft_putchar_fd(int fd, int c)
 {
-	return(write(fd, &c, 1));
+	return (write(fd, &c, 1));
 }
 
 int	err_exit(int fd, char *msg)

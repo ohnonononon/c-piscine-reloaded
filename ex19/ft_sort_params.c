@@ -6,11 +6,11 @@
 /*   By: nimatura <nimatura@student.42barce>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 18:57:42 by ohnudes           #+#    #+#             */
-/*   Updated: 2024/06/12 19:41:22 by nimatura         ###   ########.fr       */
+/*   Updated: 2024/06/12 19:41:58 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_putchar(int c);
+void	ft_putchar(char c);
 
 int	aux_strcmp(char *s1, char *s2)
 {
