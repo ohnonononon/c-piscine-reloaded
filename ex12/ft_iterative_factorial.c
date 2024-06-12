@@ -6,7 +6,7 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 17:22:25 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/12 20:11:24 by nimatura         ###   ########.fr       */
+/*   Updated: 2024/06/12 20:43:53 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_iterative_factorial(int nb)
 
 	if (nb < 0)
 		return (0);
-	if (nb == 1)
+	if (nb <= 1)
 		return (0);
 	res = 1;
 	while (nb >= 1)
