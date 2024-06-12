@@ -6,11 +6,12 @@
 #    By: nimatura <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/10 19:56:08 by nimatura          #+#    #+#              #
-#    Updated: 2024/06/12 20:49:53 by nimatura         ###   ########.fr        #
+#    Updated: 2024/06/12 22:37:27 by nimatura         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
+FLAGS = -Wall -Werror -Wextra
 
 SRC_DIR = ./src/
 INC_DIR = ./includes/
