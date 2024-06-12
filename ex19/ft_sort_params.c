@@ -6,7 +6,7 @@
 /*   By: nimatura <nimatura@student.42barce>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 18:57:42 by ohnudes           #+#    #+#             */
-/*   Updated: 2024/06/10 17:31:27 by nimatura         ###   ########.fr       */
+/*   Updated: 2024/06/12 19:41:22 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	main(int ac, char **av)
 {
 	int		i;
 	char	*tmp;
-	
+
 	if (ac < 2)
 		return (0);
 	i = 1;
