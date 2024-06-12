@@ -5,18 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/06 22:59:43 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/12 19:32:13 by nimatura         ###   ########.fr       */
+/*   Created: 2024/06/12 19:34:59 by nimatura          #+#    #+#             */
+/*   Updated: 2024/06/12 19:40:13 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_putchar(char c);
+void	ft_putchar(char c);
 
-void    ft_print_alphabet(void)
+void	ft_print_alphabet(void)
 {
-    char    c;
+	char	c;
 
-    c = 'a';
-    while (c <= 'z')
-        ft_putchar(c++);
+	c = 'a';
+	while (c <= 'z')
+		ft_putchar(c++);
 }
