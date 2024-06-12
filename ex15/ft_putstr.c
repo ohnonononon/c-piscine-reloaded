@@ -6,11 +6,11 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 17:26:35 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/10 17:26:50 by nimatura         ###   ########.fr       */
+/*   Updated: 2024/06/12 20:29:01 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_putchar(int c);
+void	ft_putchar(char c);
 
 void	ft_putstr(char *s)
 {
