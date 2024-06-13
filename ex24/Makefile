@@ -5,29 +5,40 @@
 #                                                     +:+ +:+         +:+      #
 #    By: nimatura <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/06/10 19:56:08 by nimatura          #+#    #+#              #
-#    Updated: 2024/06/13 15:20:48 by nimatura         ###   ########.fr        #
+#    Created: 2024/06/13 15:32:44 by nimatura          #+#    #+#              #
+#    Updated: 2024/06/13 15:41:21 by nimatura         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
-SRC = ./srcs/
-HEADER = ./includes/*.h
-FLAGS = -Wall -Wextra -Werror
-OPTION = -c $(HEADER)
-FILES = $(SRC)ft_putchar.c $(SRC)ft_putstr.c $(SRC)ft_strcmp.c \\
-		$(SRC)ft_strlen.c $(SRC)ft_swap.c
+OBJ_FILES = ft_putchar.o ft_swap.o ft_putstr.o ft_strlen.o ft_strcmp.o
+HDR_FILES = ft.h
 
-all: $(NAME)
+SRC_DIR = srcs
+HDR_DIR = includes
 
-$(NAME):
-	gcc $(FLAGS) $(OPTION) $(FILES) $(HEADER)
-	ar rc $(NAME) *.o
+vpath %.c $(SRC_DIR)
+vpath %.o $(SRC_DIR)
+vpath %.h $(HDR_DIR)
 
-clean:
-	/bin/rm -f *.o
+OUT = libft.a
+
+CC = cc
+CFLAGS = -Wall -Wextra -Werror -I $(HDR_DIR)
+
+all: $(OUT)
+
+$(OUT): $(OBJ_FILES) $(HDR_FILES)
+	ar rc $@ $?
+
+$(addprefix $(SRC_DIR)/, $(OBJ_FILES)): %.o:%.c 
+	$(CC) $(CFLAGS) -c $< -o $@ 
+
+clean reclean:
+	rm -f $(addprefix $(SRC_DIR)/, $(OBJ_FILES))
 
 fclean: clean
-	/bin/rm -f $(NAME)
+	rm -f $(OUT)
 
-re: fclean all
+re: fclean all reclean
+
+.PHONY: all fclean all reclean re
