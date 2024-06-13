@@ -6,20 +6,20 @@
 #    By: nimatura <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/10 19:56:08 by nimatura          #+#    #+#              #
-#    Updated: 2024/06/12 22:37:27 by nimatura         ###   ########.fr        #
+#    Updated: 2024/06/13 15:08:50 by nimatura         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 FLAGS = -Wall -Werror -Wextra
 
-SRC_DIR = ./src/
+SRC_DIR = ./srcs/
 INC_DIR = ./includes/
 
-SRCS = ft_putstr.c ft_strcmp.c ft_strlen.c ft_swap.c ft_putchar.c
+SRC_FILES = ft_putstr.c ft_strcmp.c ft_strlen.c ft_swap.c ft_putchar.c
 INC_FILE = libft.h
 
-SRC = $(addprefix $(SRC_DIR), $(SRCS))
+SRC = $(addprefix $(SRC_DIR), $(SRC_FILES))
 INC = $(addprefix $(INC_DIR), $(INC_FILE))
 
 all: $(NAME)
