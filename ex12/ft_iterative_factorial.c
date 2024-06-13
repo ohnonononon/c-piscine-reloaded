@@ -6,13 +6,13 @@
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 17:22:25 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/12 21:40:43 by nimatura         ###   ########.fr       */
+/*   Updated: 2024/06/13 15:18:20 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_iterative_factorial(int nb)
 {
-	long	res;
+	int	res;
 
 	if (nb < 0)
 		return (0);
