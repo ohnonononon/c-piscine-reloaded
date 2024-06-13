@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   display_file.c                                     :+:      :+:    :+:   */
+/*   ft_display_file.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nimatura <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 19:42:29 by nimatura          #+#    #+#             */
-/*   Updated: 2024/06/12 21:43:30 by nimatura         ###   ########.fr       */
+/*   Updated: 2024/06/13 15:02:31 by nimatura         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	print_to_output(char *buffer, int read_bytes)
 int	read_and_print(int fd)
 {
 	char	buffer[1025];
-	size_t	read_bytes;
+	ssize_t	read_bytes;
 
 	read_bytes = 1;
 	while (read_bytes > 0)
